@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().hide();
+
         recyclerView = findViewById(R.id.recycelerview);
         manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
